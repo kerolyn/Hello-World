@@ -1,13 +1,16 @@
 # How to test
 
-## 
 1. Signup
 2. Signin by using curl command<br/>
 ```sh
-$ curl -b **my.cookie** -c **my.cookie** -X POST -d "name=**username**" -d "password=**password**" http://localhost:3000/signin
+$ curl -b cookie_file -c cookie_file -X POST -d "name=user_name" -d "password=pass_word" http://localhost:3000/signin
 ```
-3. Call a method<br/>
-3.1. GET<br/>
-    $ curl -b **my.cookie** -c **my.cookie** -X GET http://localhost:3000/get<br/>
-3.2. POST</br>
-    $ curl -b **my.cookie** -c **my.cookie** -X POST -H "Content-Type: application/json" -d "@**post_json_file**" http://localhost:3000/post
+## Call a method
+1. GET
+```sh
+$ curl -b cookie_file -c cookie_file -X GET http://localhost:3000/foo
+```
+2. POST
+```sh
+$ curl -b cookie_file -c cookie_file -X POST -H "Content-Type: application/json" -d "@post_json_file" http://localhost:3000/bar
+```
