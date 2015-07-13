@@ -4,7 +4,8 @@
 1. Signup
 2. Signin by using curl command<br/>
 ```sh
-$ curl -b **my.cookie** -c **my.cookie** -X POST -d "name=**username**" -d "password=**password**" http://localhost:3000/signin```
+$ curl -b **my.cookie** -c **my.cookie** -X POST -d "name=**username**" -d "password=**password**" http://localhost:3000/signin
+```
 3. Call a method<br/>
 3.1. GET<br/>
     $ curl -b **my.cookie** -c **my.cookie** -X GET http://localhost:3000/get<br/>
