@@ -1,0 +1,23 @@
+# How to test
+
+## 
+1. Signup
+2. Signin by using curl command
+
+```sh
+$ curl -b __my.cookie__ -c __my.cookie__ -X POST -d "name=__username__" -d "password=__password__" http://localhost:3000/signin
+```
+
+3. Call a method
+
+3.1. GET
+
+```sh
+$ curl -b __my.cookie__ -c __my.cookie__ -X GET http://localhost:3000/get
+```
+
+3.2. POST
+
+```sh
+$ curl -b __my.cookie__ -c __my.cookie__ -X POST -H "Content-Type: application/json" -d "@**post_json_file**" http://localhost:3000/post
+```
